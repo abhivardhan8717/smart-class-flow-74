@@ -2,39 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Smart Classroom & Timetable Scheduler Design System
+Professional educational interface with academic colors and modern aesthetics.
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Academic color palette - Professional blues and teals */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 216 19% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 216 19% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 216 19% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep academic blue */
+    --primary: 210 100% 26%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 100% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Light academic gray */
+    --secondary: 210 17% 95%;
+    --secondary-foreground: 216 19% 16%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 17% 95%;
+    --muted-foreground: 215 13% 34%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Teal for highlights */
+    --accent: 178 100% 29%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 178 100% 23%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 100% 26%;
+
+    /* Educational specific colors */
+    --academic-blue: 210 100% 26%;
+    --academic-teal: 178 100% 29%;
+    --academic-light: 210 17% 98%;
+    --academic-gray: 215 13% 34%;
+
+    /* Gradients for beautiful effects */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 26%), hsl(178 100% 29%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210 17% 98%), hsl(214 32% 91%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 26%) 0%, hsl(178 100% 29%) 100%);
+
+    /* Shadows with academic colors */
+    --shadow-elegant: 0 10px 30px -10px hsl(210 100% 26% / 0.2);
+    --shadow-card: 0 4px 12px -2px hsl(215 13% 34% / 0.1);
+    --shadow-button: 0 2px 8px -2px hsl(210 100% 26% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
